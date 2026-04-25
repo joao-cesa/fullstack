@@ -53,35 +53,7 @@ cp .env.example .env
 ### 4. Inicie o projeto
 
 ```bash
-npm run dev
+node server.js
 ```
 
-ou
 
-```bash
-npm start
-```
-
-## Usuário admin
-
-O sistema permite cadastrar usuários com role `admin` diretamente pela rota de registro ou pelo frontend.
-
-## Rotas principais
-
-### Públicas
-
-- `POST /api/users/register`
-- `POST /api/users/login`
-
-### Protegidas
-
-- `GET /api/users/me`
-- `GET /api/users` (admin)
-- `GET /api/users/:id` (admin)
-- `PUT /api/users/:id` (admin)
-- `PATCH /api/users/:id/password` (admin)
-- `DELETE /api/users/:id` (admin)
-
-## Observação
-
-O frontend estático é servido pelo backend na rota raiz.
